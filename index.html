@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="login-container">
+       <H1>BRYAN'S CBT CENTER</H1> 
+        <h2>Login Page</h2>
+        <form action="login" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" >
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <small id="error" style="color: red;"></small>
+            
+            <input type="button" value="Login" id="submit" onclick="login()">
+        </form>
+    </div>
+    <div id="quiz-container">
+        <h1>
+            General Knowledge Quiz
+        </h1>
+        <div class="timer danger">Time left:10 seconds</div>
+        <h2 class="question"> What does HTML means</h2>
+        <div class="options">
+            <button class="option incorrect">hypertext markup language</button>
+            <button class="option">hypertext mark language</button>
+            <button class="option">hypertext up language</button>
+            <button class="option">hyper markup language</button>
+        </div>
+        <button class="nxt-btn">Next</button>
+        <button class="submit" onclick="endexam()">Submit</button>
+    </div>
+    <div class="quiz-result">
+        <h2>You have scored 4 0ut of 5.</h2>
+        <div class="question-container">
+            <div class="question">What does html means</div>
+            <div class="user-answer">Your answer: Not answered</div>
+            <div class="correct-answer">Correct answer: correct answer</div>
+        </div>
+        <div class="question-container">
+            <div class="question">What does html means</div>
+            <div class="user-answer">Your answer: Not answered</div>
+            <div class="correct-answer">Correct answer: correct answer</div>
+        </div>
+        <div class="question-container">
+            <div class="question">What does html means</div>
+            <div class="user-answer">Your answer: Not answered</div>
+            <div class="correct-answer">Correct answer: correct answer</div>
+        </div>
+        <div class="question-container">
+            <div class="question">What does html means</div>
+            <div class="user-answer">Your answer: Not answered</div>
+            <div class="correct-answer">Correct answer: correct answer</div>
+        </div>
+        <div class="question-container">
+            <div class="question">What does html means</div>
+            <div class="user-answer">Your answer: Not answered</div>
+            <div class="correct-answer">Correct answer: correct answer</div>
+        </div>
+        <button class="retake-btn">Retake Quiz</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
