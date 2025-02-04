@@ -161,4 +161,10 @@ login-container h2 {
     .quiz-container .options {
         flex-direction: column;
     }
+    #quiz-container .submit{
+          margin-left: 90px;
+    }
+    #quiz-container .timer{
+       width: 100px;
+    }
 }
