@@ -150,3 +150,15 @@ login-container h2 {
     background-color: red;
     color: white;
 }
+@media (max-width: 600px) {
+    .login-container,
+    .quiz-container,
+    .quiz-result {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .quiz-container .options {
+        flex-direction: column;
+    }
+}
